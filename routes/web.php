@@ -13,5 +13,10 @@ use App\Http\Controllers\TrainController as TrainController; // sempre mettere u
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('home');
+ })->name('home');
 
-Route::get('/', [TrainController::class, 'index']) -> name('home');
+
+Route::get('/biglietto', [TrainController::class, 'index']) -> name('biglietto');
+

@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\train; // aggiungere model
+use App\Models\Train; // aggiungere model
 
 class TrainController extends Controller
 {
     public function index(){
         
         $treno = Train::all();
+        return view('biglietto', compact('treno'));
         dd($treno);
-        return view('home', compact('treno'));
     } 
 }
