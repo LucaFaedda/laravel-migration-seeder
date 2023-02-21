@@ -11,6 +11,5 @@ class TrainController extends Controller
         
         $treno = Train::all();
         return view('biglietto', compact('treno'));
-        dd($treno);
     } 
 }

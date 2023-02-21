@@ -14,8 +14,8 @@ use App\Http\Controllers\TrainController as TrainController; // sempre mettere u
 |
 */
 Route::get('/', function () {
-    return view('home');
- })->name('home');
+    return view('welcome');
+ })->name('welcome');
 
 
 Route::get('/biglietto', [TrainController::class, 'index']) -> name('biglietto');
