@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use App\Models\train;
 
-class DatabaseSeeder extends Seeder
+class DateTrains extends Seeder
 {
     /**
      * Seed the application's database.
@@ -27,7 +27,7 @@ class DatabaseSeeder extends Seeder
             $newTrain->Codice_treno = $faker->numerify('treno-####');
             $newTrain->Numero_carrozze = $faker->randomDigit();
             $newTrain->In_orario = $faker->randomElement([true, false]);
-            $newTrain->Cancellatp = $faker->randomElement([true, false]);
+            $newTrain->Cancellat0 = $faker->randomElement([true, false]);
             $newTrain->save();
 
         };
