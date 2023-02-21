@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('Codice_treno', 10);
             $table->tinyInteger('Numero_carrozze');
             $table->boolean('In_orario')->unsigned()->default(1);
-            $table->boolean('Cancellat0')->unsigned()->default(1);
+            $table->boolean('Cancellato')->unsigned()->default(1);
 
 
         });
